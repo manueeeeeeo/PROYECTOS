@@ -1,1 +1,3 @@
-
+1º TAREALISTA -> Un programa sencillo para apuntar todas las tareas que vas ha hacer.
+En este caso, lo conectamos a una base de datos y a esas tareas las podemos marcar
+como hechas, como no hechas,ect.
