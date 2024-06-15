@@ -1,1 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
 
+.calcu {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 20px;
+    grid-template-areas: 
+        "resultado resultado resultado resultado"
+        "borrar dividir multi resta"
+        "siete ocho nueve suma"
+        "cuatro cinco seis igual"
+        "uno dos tres igual"
+        "cero punto nada igual";
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.calcu > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.calcu > input[type="text"] {
+    grid-area: resultado;
+    padding: 10px;
+    font-size: 32px;
+    text-align: right;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.calcu > *:hover {
+    transform: scale(1.1);
+}
+
+.borrar {
+    grid-area: borrar;
+    background-color: #ff6666;
+}
+
+.dividir {
+    grid-area: dividir;
+    background-color: #66ccff;
+}
+
+.multiplicar {
+    grid-area: multi;
+    background-color: #66ccff;
+}
+
+.restar {
+    grid-area: resta;
+    background-color: #66ccff;
+}
+
+.sumar {
+    grid-area: suma;
+    background-color: #66ccff;
+}
+
+.nueve {
+    grid-area: siete;
+}
+
+.ocho {
+    grid-area: ocho;
+}
+
+.siete {
+    grid-area: nueve;
+}
+
+.seis {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.cuatro {
+    grid-area: seis;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.uno {
+    grid-area: uno;
+}
+
+.cero {
+    grid-area: cero;
+}
+
+.punto {
+    grid-area: punto;
+}
+
+.obtener {
+    grid-area: igual;
+    background-color: #66ff66;
+}
