@@ -17,7 +17,7 @@ def menuPrincipal():
 #Función para ver todos los clientes
 def verTodosLosClientes():
     print(f"\nCLIENTES:")
-    with open('DIRECCION/SISTEMA HOSPITAL/Clientes.csv/SISTEMA HOSPITAL/Clientes.csv') as f:
+    with open('DIRECCION') as f:
         reader = csv.reader(f, delimiter=";")
         for row in reader:
             print("-{0} {1} {2}".format(row[0], row[1], row[2]))
@@ -26,7 +26,7 @@ def verTodosLosClientes():
 #Ver un cliente en especifio con su codigo
 def verUnCliente(cod):
     print(f"\nCLIENTE CON CÓDIGO {cod}:")
-    with open('DIRECCION/SISTEMA HOSPITAL/Clientes.csv/SISTEMA HOSPITAL/Clientes.csv') as f:
+    with open('DIRECCION') as f:
         reader = csv.reader(f, delimiter=";")
         for row in reader:
             if cod == row[0]:
@@ -41,7 +41,7 @@ def agregarCliente():
     edad = input("Digame la edad: ")
     codig = input("Digame el código: ")
     per = Persona(codig, nombre, apes, edad)
-    with open('DIRECCION/SISTEMA HOSPITAL/Clientes.csv', "a", newline='') as file:
+    with open('DIRECCION', "a", newline='') as file:
         writer = csv.writer(file, delimiter=";")
         writer.writerow([per.codigo, per.nombre, per.apes, per.edad])
     print(f"Agregado Cliente Correctamente")
