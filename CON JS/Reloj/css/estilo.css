@@ -1,1 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.clock {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 30px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-content {
+    text-align: center;
+}
+
+#hours {
+    border-color: #ff0066;
+}
+
+#minutes {
+    border-color: #ffcc00;
+}
+
+#seconds {
+    border-color: #00cc66;
+}
+
+.circle-content span {
+    display: block;
+    color: #fff;
+}
+
+#hours-value, #minutes-value, #seconds-value {
+    font-size: 48px;
+}
+
+.label {
+    font-size: 18px;
+}
+
+.period {
+    color: #fff;
+    font-size: 36px;
+    margin-left: 30px;
+}
