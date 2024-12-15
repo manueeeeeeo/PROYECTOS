@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pinganillo profesional: comunicación discreta y eficiente.">
+    <meta name="description" content="Pinganillo GlobalEars - Traducción avanzada con IA.">
+    <title>GlobalEars - Traductor Multilingüe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Pinganillo Pro</title>
+    <link rel="icon" href="imgs/logo.jpg" type="image/x-icon">
 </head>
 <body>
-    <!-- Loader -->
+    <!-- Spinner -->
     <div id="loader">
         <div class="spinner"></div>
-        <p class="loading-text">Cargando...</p>
     </div>
 
     <!-- Contenido principal -->
     <div id="main-content" class="hidden">
-        <!-- Header -->
+        <!-- Header con menú mejorado -->
         <header>
             <div class="container">
-                <img src="img/logo.png" alt="Logo" class="logo">
+                <img src="imgs/logo.jpg" alt="GlobalEars Logo" class="logo">
                 <nav>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#producto">Producto</a></li>
+                        <li><a href="#producto">Productos</a></li>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
                         <li><a href="#caracteristicas">Características</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
@@ -31,68 +35,118 @@
             </div>
         </header>
 
-        <!-- Sección Inicio -->
-        <section id="inicio">
-            <div class="hero">
-                <h1>Bienvenido a Pinganillo Pro</h1>
-                <p>Comunicación discreta y profesional al alcance de tu mano.</p>
-                <a href="#producto" class="btn btn-primary">Descubrir más</a>
+        <!-- Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Rompe las barreras del idioma</h1>
+                <p>GlobalEars te ofrece la traducción simultánea más avanzada con IA.</p>
+                <a href="#producto" class="btn btn-primary">Descubre más</a>
             </div>
         </section>
 
-        <!-- Sección Producto -->
+        <!-- Sección Sobre Nosotros -->
+        <section id="nosotros" class="section bg-light">
+            <div class="container about-us">
+                <div class="about-content">
+                    <h2 class="titu">Sobre Nosotros</h2>
+                    <p>En <strong>GlobalEars</strong>, combinamos innovación y tecnología para crear soluciones que rompen las barreras del lenguaje. Con años de experiencia en inteligencia artificial y un equipo apasionado por la comunicación global, nuestros dispositivos están diseñados para ofrecer traducciones precisas en tiempo real, permitiendo una experiencia sin límites.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Nuestros Productos -->
         <section id="producto" class="section">
-            <h2>El Producto</h2>
-            <div class="product-container">
-                <img src="img/producto.png" alt="Pinganillo Pro" class="product-image">
-                <div class="product-description">
-                    <p>Pinganillo Pro es el dispositivo perfecto para comunicaciones discretas y efectivas. Su diseño ergonómico y tecnología avanzada garantizan una experiencia superior.</p>
-                    <ul>
-                        <li>✔ Diseño ergonómico</li>
-                        <li>✔ Conexión Bluetooth</li>
-                        <li>✔ Calidad de sonido premium</li>
-                    </ul>
+            <h2 class="titu">Nuestro Producto</h2>
+            <div class="product-gallery">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="imgs/foto2.jpg" alt="Pinganillo GlobalEars">
+                    <div class="product-info">
+                        <h3>Pinganillo GlobalEars</h3>
+                        <p>Traducción avanzada con IA en tiempo real.</p>
+                        <span class="price">869,95€</span>
+                        <a href="#" class="btn btn-secondary">Comprar</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Sección Características -->
-        <section id="caracteristicas" class="section bg-light">
-            <h2>Características</h2>
-            <div class="features">
-                <div class="feature">
-                    <h3>Compacto</h3>
-                    <p>Tamaño reducido para máxima discreción.</p>
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="imgs/foto3.jpg" alt="Modo Offline">
+                    <div class="product-info">
+                        <h3>Modo Offline</h3>
+                        <p>Traducciones sin conexión a internet.</p>
+                        <a href="#" class="btn btn-secondary">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <img src="imgs/foto1.jpg" alt="Batería de Larga Duración">
+                        <div class="product-info">
+                            <h3>Batería de Larga Duración</h3>
+                            <p>Hasta 24 horas de uso continuo.</p>
+                            <a href="#" class="btn btn-secondary">Ver más</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature">
-                    <h3>Alta calidad</h3>
-                    <p>Sonido nítido y clara recepción.</p>
+            </section>
+    
+            <!-- Sección Características Mejorada -->
+            <section id="caracteristicas" class="section bg-light">
+                <h2 class="titu">Características</h2>
+                <div class="features-container">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Traducción en Tiempo Real</h3>
+                        <p>Traducción instantánea en más de 100 idiomas y dialectos para cualquier conversación.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Reconocimiento de Voz</h3>
+                        <p>Identifica quién está hablando, facilitando las conversaciones en grupo o reuniones.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Modo Offline</h3>
+                        <p>Descarga tus idiomas favoritos y traduce sin necesidad de conexión a internet.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Fácil Conexión</h3>
+                        <p>Sincronización rápida por Bluetooth y Wi-Fi para un uso sin complicaciones.</p>
+                    </div>
                 </div>
-                <div class="feature">
-                    <h3>Batería duradera</h3>
-                    <p>Hasta 12 horas de autonomía.</p>
+            </section>
+
+    
+            <!-- Sección Contacto -->
+            <section id="contacto" class="section">
+                <h2 class="titu">Contáctanos</h2>
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-row">
+                        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    </div>
+                    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </section>
+    
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <p>&copy; 2024 GlobalEars. Todos los derechos reservados.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Sección Contacto -->
-        <section id="contacto" class="section">
-            <h2>Contacto</h2>
-            <p>¿Interesado en nuestro producto? ¡Contáctanos!</p>
-            <form action="https://example.com" method="post" class="contact-form">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Pinganillo Pro. Todos los derechos reservados.</p>
-        </footer>
-    </div>
-
-    <script src="js/script.js" defer></script>
-</body>
-</html>
+            </footer>
+        </div>
+    
+        <script src="js/script.js" defer></script>
+    </body>
+    </html>
+    
